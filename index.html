@@ -1,43 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev ➔ Portfolio</title>
-      <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1L77G1N6XUqb4LP2Ed1S0Shvl8YlweEPO">
-    <style>
-        /* Remove margins and padding to ensure full page */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        /* Full-screen container for iframe */
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Responsive iframe */
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protfolio</title>
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1L77G1N6XUqb4LP2Ed1S0Shvl8YlweEPO">
+  <!-- #CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- #box icon -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--remix icon-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
 
-    <!-- Fullscreen responsive iframe container -->
-    <div class="iframe-container">
-        <iframe src="https://script.google.com/macros/s/AKfycby6RQXNqMZHiRJsgLc_WI6fz2z8QVskFJhSMCq-cVC-D3V4Y9EUd90cO_pz_GPhtwiv/exec?embedded=true"></iframe>
+  <header>
+    <a href="#home" class="logo"><span><sup>❆</sup>ZT Dev<sub>❆</sub></span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <!-- Uncomment what's bellow when you have Services -->
+      <!-- <li><a href="#services">Services</a></li> -->
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+
+    <div class="top-btnn">
+      <a href="#contact" class="h-btn">Contact me</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="main-content">
+      <h4>Hi There,</h4>
+      <h1>I'm <span><sup>❆</sup>Zakaria Tanan<sub>❆</sub></span></h1>
+      <p>A passionate and skilled programmer.
+        I have a strong educational
+        background and diverse interests that
+        extend beyond my professional life.
+        An experienced and highly motivated
+        Technical Lead with Extensive
+        experience in programming, server
+        deployment, database management,
+        solutions providing, requirements
+        analyzing and system improvements.</p>
+    </div>
+    <div class="social">
+      <a href="https://github.com/zikotan" target="_blank"><i class="ri-github-fill"></i></a>
+      <a href="https://wa.me/0633645014" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+      <a href="https://www.instagram.com/the__fitness__king" target="_blank"><i class="ri-instagram-fill"></i></a>
+      <a href="https://www.linkedin.com/in/zakaria-tanan" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+    </div>
+    <div class="main-btn">
+      <a href="mailto:tananzakaria630@gmail.com" class="btn">Hire me</a>
+      <div class="dropdown">
+        <button class="btn btn2">
+          Download CV <i class="ri-arrow-down-s-line"></i>
+          <div class="dropdown-content">
+            <a href="https://drive.google.com/uc?export=download&id=182HzdwSSdsxDX8rP6iBIrJ6EbbHWA7u6"><i
+                class="ri-download-2-line"></i> ENG</a>
+            <a href="https://drive.google.com/uc?export=download&id=1Q24mEktWHt1Qk3SmC8W8RBKXyrceUvD5">
+              <i class="ri-download-2-line"></i> FRA</a>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img" data-aos="zoom-in-down">
+      <img src="https://lh3.googleusercontent.com/d/1-Whp0mvhawddbah1umJoL9zB1PYQl3Ed" alt="">
+    </div>
+    <div class="about-text" data-aos="zoom-in-up">
+      <h2>I am a <span>Full Stack</span>
+        Web Developer</h2>
+      <div class="exp-area">
+        <p class="exp">
+          Experience:
+          <span>3 Years</span>
+        </p>
+        <p class="exp">
+          Specialty:
+          <span>Full Stack Developer</span>
+        </p>
+        <p class="exp">
+          Address:
+          <span>Casablanca, Morocco</span>
+        </p>
+        <p class="exp">
+          Email:
+          <span>tananzakaria630@gmail.com</span>
+        </p>
+        <p class="exp">
+          Phone:
+          <span>+212 633645014</span>
+        </p>
+        <p class="exp">
+          Freelance:
+          <span>Available</span>
+        </p>
+      </div>
+      <a href="https://github.com/zikotan" target="_blank" class="btn">Ride the Waves of My <i class="ri-github-fill"
+          style="font-size: large;"></i> Repos</a>
+    </div>
+  </section>
+  <!-- Uncomment what's bellow when you have Services -->
+  <!-- <section class="services" id="services">
+    <div class="center-text" data-aos="fade-down">
+      <h2>My <span>Services</span></h2>
+    </div>
+    <div class="services-content" data-aos="zoom-in-up">
+      <div class="box">
+        <img src="./img/s-1.svg" alt="">
+        <h3>UI/UX Design</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa amet fuga blanditiis autem eum!
+        </p>
+        <a href="#">Download Now          
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="box">
+        <img src="./img/s-2.svg" alt="">
+        <h3>UI/UX Design</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa amet fuga blanditiis autem eum!
+        </p>
+        <a href="#">Download Now          
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="box">
+        <img src="./img/s-3.svg" alt="">
+        <h3>UI/UX Design</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa amet fuga blanditiis autem eum!
+        </p>
+        <a href="#">Download Now          
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="portfolio" id="portfolio">
+    <div class="center-text" data-aos="fade-down">
+      <h2>My <span>Portfolio</span></h2>
+    </div>
+    <div class="portfolio-content" data-aos="zoom-in-up">
+      <div class="row"
+        onclick="showVideoPopup('https://drive.google.com/file/d/1U3tzkbXhCOxuVngGbXXU6zJi-G2xYADy/preview')">
+        <img src="https://lh3.googleusercontent.com/d/1Dqrl1lMMNtRdx9qTVubXu7ikX4P2tOhC" alt="">
+        <div class="main-row">
+          <div class="row-text">
+            <h5>CalorCalc-PersInfos</h5>
+          </div>
+          <div class="row-icon">
+            <i class="ri-play-fill"></i>
+          </div>
+        </div>
+        <h4>Calories & Macros Calculator</h4>
+      </div>
+
+      <div class="row"
+        onclick="showVideoPopup('https://drive.google.com/file/d/1Kly3OKWpC1pfRMc6cy5ARCQzDV1D_dsD/preview')">
+        <img src="https://lh3.googleusercontent.com/d/1TA2Ju0BS-Dhp6kdMJKQhzLh2hmHbWvZ_" alt="">
+        <div class="main-row">
+          <div class="row-text">
+            <h5>MealPlanner</h5>
+          </div>
+          <div class="row-icon">
+            <i class="ri-play-fill"></i>
+          </div>
+        </div>
+        <h4>Smart Meal & Macros Planner</h4>
+      </div>
     </div>
 
+  </section>
+
+  <div id="video-popup" class="video-popup">
+    <div class="popup-content">
+      <div class="popup-message">Hit Play!</div>
+      <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+      <div id="video-container"></div>
+    </div>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="center-text" data-aos="fade-down">
+      <h2>Contact <span>me</span></h2>
+    </div>
+    <div class="contact-form" data-aos="zoom-in">
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" cols="30" rows="10" placeholder="Write Your Message Here..." required></textarea>
+        <button type="submit" class="send-btn message">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Custom Alert (hidden by default) -->
+  <div id="customAlert" class="alert-overlay">
+    <div class="alert-box">
+      <p class="alert-message"><span style="vertical-align: 1px;">⚠️</span>You have exceeded the
+        maximum number of submissions. Please choose another option:</p>
+
+      <div class="alert-options">
+        <a href="https://wa.me/0633645014" target="_blank" class="alert-option whatsapp-option">
+          <i class="ri-whatsapp-fill"></i>
+        </a>
+
+        <a href="mailto:tananzakaria630@gmail.com" class="alert-option email-option">
+          <i class="ri-mail-fill"></i>
+        </a>
+      </div>
+
+      <button class="alert-close" onclick="hideAlert()">Close</button>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="copyright">
+      <p><strong><span style="font-size: medium">&copy;</span></strong> <strong> <span> 2025 Zakaria
+            Tanan.</span></strong> All rights reserved.<strong></strong></p>
+    </div>
+
+    <a href="#home" class="scroll-top">
+      <i class="ri-arrow-up-s-fill"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 50,
+      duration: 1500
+    });
+  </script>
+
 </body>
+
 </html>
